@@ -1,14 +1,20 @@
-fetch("https://api-football-beta.p.rapidapi.com/fixtures/events?fixture=37899", {// fixture events 
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "api-football-beta.p.rapidapi.com",
-		"x-rapidapi-key": "650869111emshf0716b578faa71fp19f0e6jsn45cd4d8740f6"
-	}
-}) 
+fixtureObj();
+
+
+function fixtureObj() {
+	fetch("https://api-football-beta.p.rapidapi.com/teams?league=39&season=2019", {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "api-football-beta.p.rapidapi.com",
+			"x-rapidapi-key": "ab67f9271cmshb9a1cfd92fb83bep1190b3jsnf2ba7ce4381d"
+		}})
 .then(response => response.json())
-.then(fixtureData => console.log(fixtureData))
+.then(fixtureData => renderTeamName(fixtureData.response))
+}
 
-
+function renderTeamName(teamArray) {
+console.log(teamArray)
+}
 
 // team one image 
 
