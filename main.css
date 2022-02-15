@@ -1,13 +1,38 @@
-body {
-    background-color: gray;
-}
+.container {  display: grid;
+    grid-template-columns: 0.9fr 1.2fr 0.8fr 1.2fr 1.2fr;
+    grid-template-rows: 0.4fr 1.5fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". title title title ."
+      "left-side team-1 results team-2 right-side"
+      "left-side team-1-select choose-team team-2-select right-side"
+      "footer footer footer footer footer";
+  }
+  
+  .team-1 { grid-area: team-1; }
+  
+  .team-2 { grid-area: team-2; }
+  
+  .footer { grid-area: footer; }
+  
+  .results { grid-area: results; }
+  
+  .team-1-select { grid-area: team-1-select; }
+  
+  .team-2-select { grid-area: team-2-select; }
+  
+  .choose-team { grid-area: choose-team; }
+  
+  .title { grid-area: title; }
+  
+  .left-side { grid-area: left-side; }
+  
+  .right-side { grid-area: right-side; }
+  
+  
 
-#T-1 {
-display: flex;
-flex-direction: column;
-}
-
-#T-2{
-    display: flex;  
-    flex-direction: column;
-}
+  body {
+    padding: 1rem;
+    text-align: center;
+  }
