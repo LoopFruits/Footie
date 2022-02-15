@@ -13,8 +13,20 @@ function fixtureObj() {
 }
 
 function renderTeamName(teamArray) {
-console.log(teamArray)
+const team1List = document.querySelector(".team-1")
+const team1Dropdown = document.createElement("form")
+
+team1List.appendChild(team1Dropdown);
+
+for (const team of teamArray) {
+    console.log(team);
+  }
 }
+
+
+
+// team 1 name
+
 
 // team one image 
 
