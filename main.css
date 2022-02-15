@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+
+#T-1 {
+display: flex;
+flex-direction: column;
+}
+
+#T-2{
+    display: flex;  
+    flex-direction: column;
+}
