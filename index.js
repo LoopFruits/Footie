@@ -19,7 +19,8 @@ const team1Dropdown = document.createElement("form")
 team1List.appendChild(team1Dropdown);
 
 for (const team of teamArray) {
-    console.log(team);
+	const newTeam = team.team
+    console.log(newTeam.name);
   }
 }
 
