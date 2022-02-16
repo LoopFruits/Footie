@@ -15,7 +15,7 @@ function fixtureObj() {
 function renderTeamName(teamArray) {
 const team1List = document.querySelector(".team-1")
 const team1Dropdown = document.createElement("list")
-
+teamArray.addEventListener('click', renderTeamName);
 
 
 for (const team of teamArray) {
@@ -28,6 +28,9 @@ for (const team of teamArray) {
 	team1Dropdown.appendChild(opt)
 	team1List.appendChild(team1Dropdown);
   }
+
+
+  
 }
 
 
