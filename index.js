@@ -14,13 +14,19 @@ function fixtureObj() {
 
 function renderTeamName(teamArray) {
 const team1List = document.querySelector(".team-1")
-const team1Dropdown = document.createElement("form")
+const team1Dropdown = document.createElement("list")
 
-team1List.appendChild(team1Dropdown);
+
 
 for (const team of teamArray) {
+	const opt = document.createElement("option");
 	const newTeam = team.team
-    console.log(newTeam.name);
+	const newTeamName = newTeam.name
+    console.log(newTeamName);
+	opt.text = newTeamName;
+	opt.value = newTeamName;
+	team1Dropdown.appendChild(opt)
+	team1List.appendChild(team1Dropdown);
   }
 }
 
