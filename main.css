@@ -10,25 +10,45 @@
       "footer footer footer footer footer";
   }
   
-  .team-1 { grid-area: team-1; }
+  .team-1 { 
+    grid-area: team-1; 
+  }
   
-  .team-2 { grid-area: team-2; }
+  .team-2 { 
+    grid-area: team-2; 
+  }
   
-  .footer { grid-area: footer; }
+  .footer {
+     grid-area: footer; 
+    }
   
-  .results { grid-area: results; }
+  .results { 
+    grid-area: results; 
+  }
   
-  .team-1-select { grid-area: team-1-select; }
+  .team-1-select { 
+    grid-area: team-1-select; 
+  }
   
-  .team-2-select { grid-area: team-2-select; }
+  .team-2-select {
+    grid-area: team-2-select;
+   }
   
-  .choose-team { grid-area: choose-team; }
+  .choose-team { 
+    grid-area: choose-team; 
+  }
   
-  .title { grid-area: title; }
+  .title { 
+    grid-area: title;
+   }
   
-  .left-side { grid-area: left-side; }
+  .left-side { 
+    grid-area: left-side; 
+  }
   
-  .right-side { grid-area: right-side; }
+  .right-side { 
+    grid-area: right-side; 
+  }
   
   
 
