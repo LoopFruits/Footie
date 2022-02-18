@@ -26,7 +26,7 @@ console.log(team2List)
 console.log(team1Dropdown)
 console.log(team2Dropdown)
 
-//creating buttons 
+//creating buttons, all events are all firing after one button click. 
 const Team1Btn = document.createElement("button")
 Team1Btn.textContent = "Choose Team 1"
 Team1Btn.addEventListener('click', function(){
@@ -37,10 +37,17 @@ document.body.appendChild(Team1Btn)
 
 const Team2Btn = document.createElement("button")
 Team2Btn.textContent = "Choose Team 2"
+Team1Btn.addEventListener('click', function(){
+	alert('Did We Just Become Bffs?!?')
+})
 document.body.appendChild(Team2Btn)
 
 const randomMatchupBtn = document.createElement("button")
-randomMatchupBtn.textContent = "Random Matchup"
+randomMatchupBtn.textContent = "Feeling Lucky?"
+Team1Btn.addEventListener('click', function(){
+	alert('You\'ve got spunk')
+	// maybe i shouldn't do  this alert?
+})
 document.body.appendChild(randomMatchupBtn)
 
 // now we need event listeners for these buttons 
