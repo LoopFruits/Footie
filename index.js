@@ -15,7 +15,7 @@ function fixtureObj() {
 function renderTeamName(teamArray) {
 const team1List = document.querySelector(".team-1")
 const team1Dropdown = document.createElement("list")
-teamArray.addEventListener('click', renderTeamName);
+// team1Dropdown.addEventListener('click', renderTeamName);
 
 
 for (const team of teamArray) {
@@ -23,6 +23,7 @@ for (const team of teamArray) {
 	const newTeam = team.team
 	const newTeamName = newTeam.name
     console.log(newTeamName);
+	newTeamName.addEventListener('click')
 	opt.text = newTeamName;
 	opt.value = newTeamName;
 	team1Dropdown.appendChild(opt)
@@ -32,6 +33,13 @@ for (const team of teamArray) {
 
   
 }
+
+// option tag holds my list, 
+
+// function teamListClicker(team1Dropdown){
+// 	team1Dropdown.addEventListener("click", team)
+// }
+// we need to make the list a clickable event to show the a clicked team in both img tags 
 
 
 
