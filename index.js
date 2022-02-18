@@ -28,12 +28,23 @@ console.log(team2Dropdown)
 
 //creating buttons 
 const Team1Btn = document.createElement("button")
-Team1Btn.innerHTML= "Choose Team 1"
+Team1Btn.textContent = "Choose Team 1"
+Team1Btn.addEventListener('click', function(){
+	alert('I don\'t know about that one chief')
+})
+
 document.body.appendChild(Team1Btn)
 
 const Team2Btn = document.createElement("button")
-Team2Btn.innerHTML = "Choose Team 2"
+Team2Btn.textContent = "Choose Team 2"
 document.body.appendChild(Team2Btn)
+
+const randomMatchupBtn = document.createElement("button")
+randomMatchupBtn.textContent = "Random Matchup"
+document.body.appendChild(randomMatchupBtn)
+
+// now we need event listeners for these buttons 
+	// more specifically we need the team names attached to these buttons 
 
 
 
