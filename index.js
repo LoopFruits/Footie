@@ -9,26 +9,37 @@ function fixtureObj() {
 			"x-rapidapi-key": "ab67f9271cmshb9a1cfd92fb83bep1190b3jsnf2ba7ce4381d"
 		}})
 .then(response => response.json())
-.then(fixtureData => renderTeamName(fixtureData.response))
+.then(teamData => renderTeamName(teamData.response))
 }
 
 function renderTeamName(teamArray) {
 const team1List = document.querySelector(".team-1")
+const team2List = document.querySelector(".team-2")
 const team1Dropdown = document.createElement("list")
+const team2Dropdown = document.createElement("list")
+console.log(team1List)
+console.log(team2List)
+console.log(team1Dropdown)
+console.log(team2Dropdown)
 // team1Dropdown.addEventListener('click', renderTeamName);
 
+// what are we doing here?
+// parsing our team data, creating a new element of option 
 
-for (const team of teamArray) {
-	const opt = document.createElement("option");
-	const newTeam = team.team
-	const newTeamName = newTeam.name
-    console.log(newTeamName);
-	newTeamName.addEventListener('click')
-	opt.text = newTeamName;
-	opt.value = newTeamName;
-	team1Dropdown.appendChild(opt)
-	team1List.appendChild(team1Dropdown);
-  }
+// for (const team of teamArray) {
+// 	const opt = document.createElement("option");
+// 	const newTeam = team.team
+// 	const newTeamName = newTeam.name
+//     console.log(newTeamName);
+// 	newTeamName.addEventListener('click', function(){
+
+
+// 	opt.text = newTeamName;
+// 	opt.value = newTeamName;
+// 	team1Dropdown.appendChild(opt)
+// 	team1List.appendChild(team1Dropdown);
+// 	})	
+//   }
 
 
   
