@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded',function(){
 	fetch("https://api-football-beta.p.rapidapi.com/teams?league=39&season=2019", {
 		"method": "GET",
 		"headers": {
-			"x-rapidapi-host": "api-football-beta.p.rapidapi.com",
-			"x-rapidapi-key": "ab67f9271cmshb9a1cfd92fb83bep1190b3jsnf2ba7ce4381d"
+			
 		}})
 .then(response => response.json())
 // .then(teamData => renderTeamName(teamData.response))
@@ -56,7 +55,7 @@ document.body.appendChild(Team2Btn)
 const randomMatchupBtn = document.createElement("button")
 randomMatchupBtn.textContent = "Feelin\' Lucky?"
 randomMatchupBtn.addEventListener('click', function(){
-	alert('You\'ve got spunk')
+	alert('Thanks for you\'identity')
 	// maybe i shouldn't do  this alert?
 })
 document.body.appendChild(randomMatchupBtn)
