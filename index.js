@@ -1,7 +1,7 @@
-fixtureObj();
+//fixtureObj();
 
 
-function fixtureObj() {
+//function fixtureObj() {
 	fetch("https://api-football-beta.p.rapidapi.com/teams?league=39&season=2019", {
 		"method": "GET",
 		"headers": {
@@ -9,10 +9,14 @@ function fixtureObj() {
 			"x-rapidapi-key": "ab67f9271cmshb9a1cfd92fb83bep1190b3jsnf2ba7ce4381d"
 		}})
 .then(response => response.json())
+// .then(teamData => renderTeamName(teamData.response))
 .then(teamData => renderTeamName(teamData.response))
-}
+// we want to display the response that holds all the teams. 
 
-function renderTeamName(teamArray) {
+//}
+
+function renderTeamName(teamData) {
+	console.log(teamData)
 const team1List = document.querySelector(".team-1")
 const team2List = document.querySelector(".team-2")
 const team1Dropdown = document.createElement("list")
@@ -21,14 +25,21 @@ console.log(team1List)
 console.log(team2List)
 console.log(team1Dropdown)
 console.log(team2Dropdown)
+
+// what do we want to achieve?	
+	// we want to display every team in the teamData
+
+
+
 // team1Dropdown.addEventListener('click', renderTeamName);
 
 // what are we doing here?
 // parsing our team data, creating a new element of option 
 
-// for (const team of teamArray) {
+// 38-44 are correct, don't like the way its written 
+// for (const team of teamArray) { //  what even was teamArray????
 // 	const opt = document.createElement("option");
-// 	const newTeam = team.team
+// 	const newTeam = team.team // how does this even work??
 // 	const newTeamName = newTeam.name
 //     console.log(newTeamName);
 // 	newTeamName.addEventListener('click', function(){
