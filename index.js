@@ -28,7 +28,7 @@ console.log(team2List)
 console.log(team1Dropdown)
 console.log(team2Dropdown)
 	teamData.forEach(team => {
-		console.log(team)
+		console.log(team) // loop is showing team obj, which we want 
 	})
 //creating buttons, all events are all firing after one button click. Fixed the issue, all the event listener are attached to one button
 const Team1Btn = document.createElement("button")
