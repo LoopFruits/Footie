@@ -26,6 +26,19 @@ console.log(team2List)
 console.log(team1Dropdown)
 console.log(team2Dropdown)
 
+//creating buttons 
+const Team1Btn = document.createElement("button")
+Team1Btn.innerHTML= "Choose Team 1"
+document.body.appendChild(Team1Btn)
+
+const Team2Btn = document.createElement("button")
+Team2Btn.innerHTML = "Choose Team 2"
+document.body.appendChild(Team2Btn)
+
+
+
+
+
 // what do we want to achieve?	
 	// we want to display every team in the teamData
 
